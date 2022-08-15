@@ -1,0 +1,41 @@
+Globals:
+
+__dirname
+__filename
+require
+module
+process
+
+Modules:
+
+os
+path
+fs
+http
+
+os:
+
+os.userInfo()
+os.uptime()
+os.type()
+os.release()
+os.totalmem()
+os.freemem()
+
+path:
+
+path.sep
+path.join(<folder name>, <file name>)
+path.basename(<path>)
+
+synchronous fs:
+
+readFileSync("<file path>, "utf8")
+writeFileSync(<file path>, <text to add>)
+writeFileSync(<file path>, <text to add>, { flag : a }) // doesn't overwrite file
+
+asynchronous fs:
+
+readFile(<file path>, "utf8", (err, txt) => console.log(txt))
+writeFile(<file path>, <text to add>, (err, txt) => {})
+writeFile(<file path>, <text to add>, { flag: "a" }, (err, txt) => {}) // doesn't overwrite file
